@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: [paths.src + '/index.js'],
+  entry: ['react-hot-loader/patch',paths.src + '/index.js'],
   output: {
     path: paths.build,
     filename: '[name].bundle.js',
